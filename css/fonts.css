@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+a, li, div,
+span, p,
+h1, h2, h3, 
+h4, h5, h6  {
+    font-family: "Open Sans";
+    color: #3A3A3A;
+}
+.text-pink {
+    color: #FD638A;
+}
+.text-blue {
+    color: #00E0DA;
+}
+h1, h2, h3, 
+h4, h5, h6 {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
