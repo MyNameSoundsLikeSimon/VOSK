@@ -1,0 +1,43 @@
+.header-img {
+    min-height: 350px;
+    padding: 125px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000000;
+}
+.about-header {
+    background-image: url(../img/about-salon-header.png);
+}
+.masters-header {
+    background-image: url(../img/masters-header.png);
+}
+.interior-header {
+    background-image: url(../img/interior-header.png);
+}
+.salons-header {
+    background-image: url(../img/salon-header.png);
+}
+.page-header {
+    font-size: 70px;
+    color: #ffffff;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+.side-ul>li>a,
+.side-ul>li {
+    text-transform: uppercase;
+}
+.side-ul>li.active {
+    color: #3A3A3A;
+}
+ol.breadcrumb {
+    background: none;
+}
+ol.breadcrumb>li.active,
+ol.breadcrumb>li>a {
+    color: #ffffff;
+}
