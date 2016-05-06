@@ -27,7 +27,8 @@ header {
     text-decoration: none;
 }
 .index-header {
-    
+    height: 0;
+    padding: 0;
 }
 .header-img {
     min-height: 350px;
@@ -83,6 +84,20 @@ ol.breadcrumb>li>a {
 .main-content-sect {
     padding: 30px 0;
     margin: 20px 0;
+}
+.scroller {
+    display: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    position: fixed;
+    z-index: 111;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0.8;
+    text-align: center;
+    cursor: pointer;
+    background-image: url('../img/scrollup.png');
 }
 /*----- common -----*/
 
