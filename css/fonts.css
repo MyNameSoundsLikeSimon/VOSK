@@ -1,18 +1,32 @@
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'OpenSansRegular';
     src: url('../fonts/OpenSans-Regular.ttf');
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
 }
 @font-face {
-    font-family: 'Proxima Nova';
+    font-family: 'ProximaNovaRegular';
     src: url('../fonts/ProximaNova-Reg.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNova-Reg.otf') format('opentype');
+    font-weight: bold;
 }
 
 a, li, div,
 span, p,
 h1, h2, h3, 
 h4, h5, h6  {
-    font-family: "Open Sans";
+    font-family: 'OpenSansRegular';
     color: #3A3A3A;
 }
 a:hover {
