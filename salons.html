@@ -10,9 +10,37 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><img src="img/logo.png" alt="Логотип"></div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <p><em>В индустрии красоты с 2001 года</em></p>
+                        </div>
+                        <div class="col-md-3 text-right"><a href="#">Задать вопрос</a></div>
+                        <div class="col-md-3 text-right"><a href="#">Онлайн запись - 15%</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="header-menu">
+                                <li><a href="#">услуги</a></li>
+                                <li><a href="#">акции</a></li>
+                                <li><a href="#">цены</a></li>
+                                <li><a href="#">мастера</a></li>
+                                <li><a href="#">о нас</a></li>
+                                <li><a href="#">салоны</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="salons-header header-img">
         <div class="container">
             <div class="row">
@@ -28,17 +56,17 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="main-content-sect">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <ul class="side-ul">
-                        <li><a href="#" class="text-pink">Все салоны</a></li>
-                        <li><a href="#" class="text-pink">Алтуфьево</a></li>
-                        <li><a href="#" class="text-pink">Бибирево</a></li>
-                        <li><a href="#" class="text-pink">Бабушкинская</a></li>
-                        <li><a href="#" class="text-pink">Свиблово</a></li>
-                        <li><a href="#" class="text-pink">Свиблово (ногтевой салон)</a></li>
+                        <li class="active">Все салоны</li>
+                        <li><a href="#">Алтуфьево</a></li>
+                        <li><a href="#">Бибирево</a></li>
+                        <li><a href="#">Бабушкинская</a></li>
+                        <li><a href="#">Свиблово</a></li>
+                        <li><a href="#">Свиблово (ногтевой салон)</a></li>
                     </ul>
                 </div>
                 <div class="col-md-9">
@@ -52,40 +80,44 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>г. Москва, ул. Илимская, 12</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>+7 (495) 601-28-17</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>Часы работы: ежедневно</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>с 10:00 до 21:00 без выходных</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <img src="" alt="">
-                                <div class="row">
-                                    <p>Подробнее о салоне</p>
+                                <div class="col-md-12">
+                                    <div class="map-container">
+                                        <b>карта</b>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
-                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Подробнее о салоне</p>
+                            </div>
+                            <div class="row">
+                                <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
                             </div>
                         </article>
                         <hr />
@@ -100,40 +132,44 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>г. Москва, Алтуфьевское ш.,48 к1</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>+7 (495) 601-28-17</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>Часы работы: ежедневно</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>с 10:00 до 21:00 без выходных</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <img src="" alt="">
-                                <div class="row">
-                                    <p>Подробнее о салоне</p>
+                                <div class="col-md-12">
+                                    <div class="map-container">
+                                        <b>карта</b>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
-                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Подробнее о салоне</p>
+                            </div>
+                            <div class="row">
+                                <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
                             </div>
                         </article>
                         <hr />
@@ -148,48 +184,57 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>г. Москва, ул. Менжинского, 23к1</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>+7 (495) 601-28-17</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>Часы работы: ежедневно</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                     <div class="row">
-                                        <col-md-12>
+                                        <div class="col-md-12">
                                             <p>с 10:00 до 21:00 без выходных</p>
-                                        </col-md-12>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <img src="" alt="">
-                                <div class="row">
-                                    <p>Подробнее о салоне</p>
+                                <div class="col-md-12">
+                                    <div class="map-container">
+                                        <b>карта</b>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
-                                    <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
-                                </div>
+                            </div>
+                            <div class="row">
+                                <p>Подробнее о салоне</p>
+                            </div>
+                            <div class="row">
+                                <col-md-3><img src="img/salon-1.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-2.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-3.png" alt=""></col-md-3>
+                                <col-md-3><img src="img/salon-4.png" alt=""></col-md-3>
                             </div>
                         </article>
                         <hr />
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 text-center banner"><img src="img/h-banner.png" alt=""></div>
+            </div>
         </div>
     </section>
-    <!-- footer -->
+    <footer>
+        <div class="scroller"></div>
+    </footer>
 </body>
 </html>
