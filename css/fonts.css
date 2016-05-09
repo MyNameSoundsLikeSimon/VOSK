@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'OpenSansRegular';
-    src: url('../fonts/OpenSans-Regular.ttf');
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
     font-style: normal;
 }
@@ -11,29 +10,60 @@
 }
 @font-face {
     font-family: 'OpenSansBold';
-    src: url('../fonts/OpenSans-Regular.ttf');
-    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
-    
 }
 @font-face {
     font-family: 'ProximaNovaBold';
-    src: url('../fonts/ProximaNova-Reg.otf') format('opentype');
+    src: url('../fonts/ProximaNova-Bold.otf') format('opentype');
     font-weight: bold;
 }
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNova-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icon-font/IcoMoon-Free.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+}
+
+.icon-fb:before {  content: "\ea90"; }
+.icon-inst:before {  content: "\ea92"; }
+.icon-vk:before {  content: "\ea98"; }
 
 a, li, div,
-span, p,
+span, p {
+    font-family: 'OpenSansRegular';
+    color: #333333;
+}
 h1, h2, h3, 
 h4, h5, h6  {
-    font-family: 'OpenSansRegular';
-    color: #3A3A3A;
-}
-a:hover {
-    text-decoration: dotted;
+    font-family: 'OpenSansBold';
+    color: #333333;
 }
 .text-pink {
-    color: #FD638A;
+    color: #fd305f;
 }
 .text-blue {
     color: #00E0DA;
