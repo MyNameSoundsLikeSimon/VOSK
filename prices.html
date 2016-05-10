@@ -11,6 +11,8 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/map.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -46,27 +48,223 @@
             </div>
         </div>
     </header>
-    <!--Косметология
-            Аппаратная косметология
-            Эстетическая косметология
-            Наращивание ресниц
-        Уколы красоты
-        Массаж
-        Эпиляция
-        Ногтевая студия
-        Парикмахерские услуги-->
-        
-        
-        
-        <!--Глубокое бикини. br Специальная цена-->
-        
-        
-        <!--
+    <section class="prices-header header-img">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb text-center">
+                        <li><a href="">Главная</a></li>
+                        <li class="active">Цены</li>
+                    </ol>
+                </div>
+                <div class="col-md-12">
+                    <h1 class="page-header text-center">Цены на услуги</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="side-ul-alt">
+                        <li><a role="button" data-toggle="collapse" href="#comsmetics" aria-expanded="false" aria-controls="comsmetics">Косметология</a>
+                            <div class="collapse sub-list" id="comsmetics">
+                                <ul>
+                                    <li><a href="#">Аппаратная косметология</a></li>
+                                    <li><a href="#">Эстетическая косметология</a></li>
+                                    <li><a href="#">Наращивание ресниц</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Уколы красоты</a></li>
+                        <li><a href="#">Массаж</a></li>
+                        <li><a href="#">Эпиляция</a></li>
+                        <li><a href="#">Ногтевая студия</a></li>
+                        <li><a href="#">Парикмахерские услуги</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="price-table-header">Аппаратная косметология</h3>
+                        </div>
+                    </div>
+                    <div class="row price-table">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-caption">Наименование</div>
+                                <div class="col-md-1 text-center table-caption">Время</div>
+                                <div class="col-md-2 text-center table-caption">Модельер</div>
+                                <div class="col-md-2 text-center table-caption">Стилист</div>
+                                <div class="col-md-2 text-center table-caption">Ведущий стилист</div>
+                                <div class="col-md-2 text-center table-caption">Запись</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert last">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="price-table-header">Эстетическая косметология</h3>
+                        </div>
+                    </div>
+                    <div class="row price-table">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-caption">Наименование</div>
+                                <div class="col-md-1 text-center table-caption">Время</div>
+                                <div class="col-md-2 text-center table-caption">Модельер</div>
+                                <div class="col-md-2 text-center table-caption">Стилист</div>
+                                <div class="col-md-2 text-center table-caption">Ведущий стилист</div>
+                                <div class="col-md-2 text-center table-caption">Запись</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert last">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="price-table-header">Наращивание ресниц</h3>
+                        </div>
+                    </div>
+                    <div class="row price-table">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-caption">Наименование</div>
+                                <div class="col-md-1 text-center table-caption">Время</div>
+                                <div class="col-md-2 text-center table-caption">Модельер</div>
+                                <div class="col-md-2 text-center table-caption">Стилист</div>
+                                <div class="col-md-2 text-center table-caption">Ведущий стилист</div>
+                                <div class="col-md-2 text-center table-caption">Запись</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 table-row invert last">
+                            <div class="row">
+                                <div class="col-md-3 text-center table-cell">Глубокое бикини. <br><br> Специальная цена</div>
+                                <div class="col-md-1 text-center table-cell"><br>1 час</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item">2400</span><br><br>2400</div>
+                                <div class="col-md-2 text-center table-cell"><span class="table-item"><a href="#"><span class="fa fa-pencil"></span> онлайн</a></span><br><br>по телефону</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12 text-center banner">
                     <a href="#"><img src="img/h-banner.png" alt="banner"></a>
                 </div>
-            </div>-->
+            </div>
+        </div>
+    </section>
     <section class="salon-mini-sect">
         <div class="container">
             <div class="row">

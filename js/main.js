@@ -22,4 +22,9 @@ $(document).ready(function(){
     });
 
     $('.scroller').click(function () { scrollToTop(); });
+    
+    $('.side-ul-alt li a').click(function() {
+        $('.side-ul-alt li a').removeClass("text-pink");
+        $(this).toggleClass("text-pink");
+    });
 });

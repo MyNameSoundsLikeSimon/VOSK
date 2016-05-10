@@ -83,6 +83,21 @@ header {
 .salons-header {
     background-image: url(../img/salon-header.png);
 }
+.prices-header {
+    background-image: url(../img/prices-header.png);
+}
+.sales-header {
+    background-image: url(../img/sales-header.png);    
+    min-height: 450px;
+    padding: 170px 0;
+    background-position-y: 30%;
+}
+.servicies-header {
+    background-image: url(../img/servicies-header.png);
+    min-height: 450px;
+    padding: 170px 0;
+    background-position-y: 45%;
+}
 .page-header {
     font-size: 48px;
     font-weight: bold;
@@ -377,7 +392,7 @@ footer {
 }
 .vacancies-list {
     padding-left: 20px;
-    list-style: square;
+    list-style: disc;
     margin-bottom: 40px;
 }
 .vacancies-list>li {
@@ -475,17 +490,185 @@ footer {
     background-color: #fff0f0;
     color: #000000;
 }
-.sales-hot {
+.sales .hot {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #fd305f;
     color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+}
+.sales .hot.active {
+    opacity: 1;
+}
+.sales {
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+.sales .item {
+    margin-bottom: 30px;
+}
+.sales .sales-img {
+    width: 100%;
+    height: 250px;
 }
 /*-----sales----*/
 
+/*-----sales-inner----*/
+.sales-informer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fd305f;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.sales-informer .till-the-end {
+    color: #ffffff;
+    font-size: 14px;
+}
+.sales-list {
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.sales-list>li {
+    color: #fd305f;
+}
+.sales-list>li>span {
+    color: #333333;
+}
+.sales-info-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sales-back {
+    margin-top: 30px;
+}
+.other-sales {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.other-sales .other-header {
+    font-family: 'ProximaNovaBold';
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.other-sales .other-img-wrapper {
+    height: 200px;
+}
+.other-sales .other-img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+/*-----sales-inner----*/
 
 /*-----prices----*/
+.sub-list {
+    margin-left: 20px; 
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.price-table-header {
+    margin-top: 35px;
+}
+.price-table {
+    margin-top: 35px;
+}
+.table-caption {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.price-table .table-row {
+    border-top: 1px solid #cacaca;
+    padding: 20px;
+}
+.price-table .table-row.last {
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 30px;
+}
+.price-table .table-row.invert {
+    border-top: 1px solid #cacaca;
+    background-color: #f3f3f3;
+}
+.price-table .table-cell {
+    font-size: 13px;
+}
+.price-table .table-item {
+    padding: 5px 10px;
+    background-color: #FFD300;
+    border-radius: 70px;
+}
+.price-table .table-item:hover {
+    padding: 5px 10px;
+    border-radius: 70px;
+    color: #ffffff;
+    background-color: #fd305f;
+}
+.price-table .table-item:hover a {
+    color: #ffffff;
+    text-decoration: none;
+}
 /*-----prices----*/
 
 /*-----services----*/
+.servicies-info-top {
+    position: relative;
+    top: 100px;
+}
+.servicies-info-top-container {
+    display: inline-block;
+}
+.servicies-info-top-text {
+    color: #ffffff;
+}
+.servicies-info-top-text .main {
+    text-transform: uppercase;
+}
+.servicies-info-header {
+    font-family: 'ProximaNovaBold';
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.servicies-info-text {
+    padding: 0;
+    margin-left: -15px;
+}
+.servicies {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+}
+.servicies .other-header {
+    font-family: 'ProximaNovaBold';
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.servicies .other-img-wrapper {
+    height: 200px;
+}
+.servicies .other-img-wrapper>img {
+    width: 100%;
+    height: 100%;
+}
+.servicies .other-info-header {
+    font-family: 'ProximaNovaBold';
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.servicies .other-info-text {
+    margin-bottom: 30px;
+}
 /*-----services----*/
